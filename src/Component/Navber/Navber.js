@@ -1,6 +1,7 @@
 import React from 'react';
 import Toggle from '../Toggle/Toggle';
 import './Navber.css';
+import { Link } from 'react-scroll';
 
 const Navber = () => {
     return (
@@ -14,14 +15,37 @@ const Navber = () => {
             <div className="n-right">
                 <div className="n-list">
                     <ul style={{ listStyleType: 'none' }}>
-                        <li>Home</li>
-                        <li>Service</li>
-                        <li>Experience</li>
-                        <li>Portfolio</li>
-                        <li>Testimonial</li>
+                        <Link spy={true} to='Navber' smooth={true} activeClass='activeClass'>
+                            <li>Home</li>
+
+                        </Link>
+                        <Link spy={true} to={"Services"} smooth={true} >
+                            <li>Service</li>
+
+
+                        </Link>
+                        <Link spy={true} to={'Experience'} smooth={true} >
+                            <li>Experience</li>
+
+
+                        </Link>
+                        <Link spy={true} to={'Portfolio'} smooth={true} >
+                            <li>Portfolio</li>
+
+                        </Link>
+                        <Link spy={true} to={'Testimonial'} smooth={true} >
+                            <li>Testimonial</li>
+
+                        </Link>
+
+
                     </ul>
                 </div>
-                <button className='button n-button'>Contact</button>
+                <Link spy={true} to={'Contact'} smooth={true} >
+                    <button className='button n-button'>Contact</button>
+
+
+                </Link>
             </div>
 
         </div>

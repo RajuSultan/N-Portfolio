@@ -8,7 +8,7 @@ import musicapp from '../../img/musicapp.png';
 import 'swiper/css'
 const Portfolio = () => {
     return (
-        <div className='portfolio'>
+        <div className='portfolio' id='Portfolio'>
             <span>Resent Projects</span>
             <span>Portfolio</span>
 

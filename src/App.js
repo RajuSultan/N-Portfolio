@@ -18,8 +18,8 @@ function App() {
   return (
     <div className="App"
       style={{
-        background: darkMode ? 'black' : '',
-        color: darkMode ? 'white' : ''
+        background: darkMode ? '' : 'black',
+        color: darkMode ? '' : 'white'
       }}>
       <Navber></Navber>
       <Intro></Intro>
